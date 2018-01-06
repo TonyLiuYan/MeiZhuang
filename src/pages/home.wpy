@@ -1,0 +1,119 @@
+<style lang="less">
+  .swiper {
+    height: 348rpx;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pos {
+    position: absolute;
+    top: 0rpx;
+    left: 0;
+    right: 0;
+    .search_content {
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid #efefee;
+      .icon-search,
+      .search_input {
+        color: #efefee;
+      }
+    }
+    .message {
+      display: block;
+      text-align: center;
+      margin-left: 20rpx;
+    }
+    .doc {
+      font-size: 16rpx;
+      display: block;
+    }
+  }
+
+
+  .nav_list {
+    color: #404040;
+    display: flex;
+    font-size: 26rpx;
+    justify-content: space-between;
+    padding: 17rpx 50rpx;
+    navigator {
+      text-align: center
+    }
+    .nav_icon {
+      height: 80rpx;
+      margin: 0 auto;
+      width: 80rpx;
+      margin-bottom: 14rpx;
+    }
+    .nav_text {
+      font-size: 26rpx
+    }
+  }
+
+  .recommend-title {
+    padding: 40rpx 0;
+    text-align: center;
+    color: #333;
+  }
+
+</style>
+
+<template>
+  <view class="container">
+    <swiper class="swiper" indicator-active-color="{{indicatorActiveColor}}" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{adList}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="nav_list">
+    <navigator open-type="navigate" url="/pages/sign_in">
+      <image src="../images/icon_nav_01_new.png" class="nav_icon"></image>
+      <view class="nav_text">主营项目介绍</view>
+    </navigator>
+    <navigator open-type="navigate" url="/pages/exchange_goods">
+      <image src="../images/icon_nav_02_new.png" class="nav_icon"></image>
+      <view class="nav_text">顾客作品展示</view>
+    </navigator>
+    <navigator open-type="navigate" url="/pages/wholesale">
+      <image src="../images/icon_nav_03_new.png" class="nav_icon"></image>
+      <view class="nav_text">预约</view>
+    </navigator>
+    <navigator open-type="navigate" url="/pages/replenishment_goods">
+      <image src="../images/icon_nav_04_new.png" class="nav_icon"></image>
+      <view class="nav_text">最新活动</view>
+    </navigator>
+  </view>
+</template>
+
+<script>
+  /* eslint-disable no-trailing-spaces,spaced-comment */
+
+  import wepy from 'wepy'
+
+  export default class Home extends wepy.page {
+    config = {}
+
+    data = {
+      //swiper组件属性设置
+      indicatorActiveColor: '#fff', //当前选中的指示点颜色
+      indicatorDots: true, //是否显示面板指示点
+      autoplay: true, //是否自动切换
+      interval: 3000, //自动切换时间间隔
+      duration: 1000, //滑动动画时长
+      adList: [
+        'http://p247dmvg4.bkt.clouddn.com/9.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/1.png',
+        'http://p247dmvg4.bkt.clouddn.com/2.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/3.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/2.jpg']
+    }
+  }
+</script>

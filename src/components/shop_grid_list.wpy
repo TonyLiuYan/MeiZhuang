@@ -1,0 +1,113 @@
+<!--商品列表模块-->
+<template>
+  <scroll-view scroll-y="true" class="swiper-item-box">
+    <view class="shop_item">
+      <navigator class="list" wx:for="{{list}}" wx:key="item">
+        <view class="image_box">
+          <image src="{{item.thumLogo}}"></image>
+        </view>
+        <view class="goods">
+          <view class="product_name" wx:if="{{showTitle}}">{{item.name}}</view>
+          <view class="product_info">
+            <view class="price">￥{{item.price}}</view>
+            <view class="cost_price">￥{{item.marketPrice}}</view>
+            <view class="sale_num">销量{{item.saleCount}}件</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class ShopGridList extends wepy.component {
+    props = {
+      list: [],
+      purchasetype: {
+        default: 1  //类型:1-商品订单;2-商品补单;
+      },
+      special: {
+        default: 0 //0-正常入库;1-特价专区和换货专区
+      },
+      showTitle: {
+        default: true
+      }
+    }
+
+    events = {}
+
+    methods = {}
+
+    onLoad() {
+
+    }
+  }
+
+</script>
+
+<style lang="less">
+  .shop_item {
+    padding: 0 rpx 15 rpx;
+    background: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30 rpx;
+  }
+
+  .list:nth-child(odd) {
+    margin-right: 10 rpx;
+  }
+
+  .list {
+    background: #fff;
+    width: 355 rpx;
+    margin-top: 15 rpx;
+    .image_box {
+      image {
+        width: 100%;
+        height: 345 rpx;
+      }
+    }
+    .product_name {
+      color: #1a1a1a;
+      font-size: 28 rpx;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+    .price {
+      color: #de0000;
+      font-size: 35 rpx;
+      font-weight: 600;
+    }
+    .cost_price {
+      color: #666666;
+      font-size: 24 rpx;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+    .sale_num {
+      color: #666666;
+      font-size: 22 rpx;
+    }
+    .goods {
+      padding: 15 rpx 12 rpx;
+    }
+    .product_info {
+      padding-top: 20 rpx;
+      display: flex;
+      align-items: flex-end;
+    }
+    .cost_price {
+      padding-left: 20 rpx;
+    }
+    .sale_num {
+      padding-left: 20 rpx;
+    }
+  }
+
+</style>
