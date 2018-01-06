@@ -1,6 +1,6 @@
 <style lang="less">
   .swiper {
-    height: 348rpx;
+    height: 400rpx;
   }
 
   .slide-image {
@@ -32,7 +32,6 @@
     }
   }
 
-
   .nav_list {
     color: #404040;
     display: flex;
@@ -57,6 +56,104 @@
     padding: 40rpx 0;
     text-align: center;
     color: #333;
+  }
+
+  //**********************************************************
+  page {
+    background: #fff;
+  }
+
+  .img_box {
+    width: 100%;
+    height: 370rpx;
+    background: #000;
+  }
+
+  .discover_img {
+    width: 100%;
+    height: 370rpx;
+  }
+
+  .info {
+    margin-top: 30rpx;
+    padding: 0rpx 30rpx;
+    .title {
+      margin-bottom: 20rpx;
+      color: #000;
+    }
+    .doc {
+      color: #000000;
+      padding-top: 15rpx;
+      display: flex;
+      align-items: center;
+      .lx {
+        font-size: 20rpx;
+        margin-right: 20rpx;
+      }
+    }
+  }
+
+  //********************************************8
+  .shop_item {
+    padding: 0rpx 15rpx;
+    background: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30rpx;
+  }
+
+  .list:nth-child(odd) {
+    margin-right: 10rpx;
+  }
+
+  .list {
+    background: #fff;
+    width: 355rpx;
+    margin-top: 15rpx;
+    .image_box {
+      image {
+        width: 100%;
+        height: 345rpx;
+      }
+    }
+    .product_name {
+      color: #1a1a1a;
+      font-size: 28rpx;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+    .price {
+      color: #de0000;
+      font-size: 35rpx;
+      font-weight: 600;
+    }
+    .cost_price {
+      color: #666666;
+      font-size: 24rpx;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+    .sale_num {
+      color: #666666;
+      font-size: 22rpx;
+    }
+    .goods {
+      padding: 15rpx 12rpx;
+    }
+    .product_info {
+      padding-top: 20rpx;
+      display: flex;
+      align-items: flex-end;
+    }
+    .cost_price {
+      padding-left: 20rpx;
+    }
+    .sale_num {
+      padding-left: 20rpx;
+    }
   }
 
 </style>
@@ -91,16 +188,42 @@
       <view class="nav_text">最新活动</view>
     </navigator>
   </view>
+
+  <scroll-view scroll-y="true" class="swiper-item-box">
+    <view class="shop_item">
+      <navigator class="list" wx:for="{{list}}" wx:key="item">
+        <view class="image_box">
+          <image src="{{item.thumLogo}}"></image>
+        </view>
+        <view class="goods">
+          <view class="product_name" wx:if="{{showTitle}}">{{item.name}}</view>
+          <!--<view class="product_info">-->
+            <!--<view class="price">￥{{item.price}}</view>-->
+            <!--<view class="cost_price">￥{{item.marketPrice}}</view>-->
+            <!--<view class="sale_num">销量{{item.saleCount}}件</view>-->
+          <!--</view>-->
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
 </template>
 
 <script>
   /* eslint-disable no-trailing-spaces,spaced-comment */
 
   import wepy from 'wepy'
+//  import ShopGridList from '../components/shop_grid_list'
+//  import BottomLoadMore from '../components/common/bottomLoadMore'
+//  import Placeholder from '../components/common/placeholder'
 
   export default class Home extends wepy.page {
     config = {}
 
+    components = {
+//      shopGridList: ShopGridList
+//      bottomLoadMore: BottomLoadMore,
+//      placeholder: Placeholder
+    }
     data = {
       //swiper组件属性设置
       indicatorActiveColor: '#fff', //当前选中的指示点颜色
@@ -113,7 +236,31 @@
         'http://p247dmvg4.bkt.clouddn.com/1.png',
         'http://p247dmvg4.bkt.clouddn.com/2.jpg',
         'http://p247dmvg4.bkt.clouddn.com/3.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/2.jpg']
+        'http://p247dmvg4.bkt.clouddn.com/2.jpg'
+      ],
+      showTitle: true,
+      list: [
+        {
+          thumLogo: 'http://p247dmvg4.bkt.clouddn.com/2.jpg',
+          name: '这里是产品标题'
+        },
+        {
+          thumLogo: 'http://p247dmvg4.bkt.clouddn.com/1.jpg',
+          name: '这里是产品标题'
+        },
+        {
+          thumLogo: 'http://p247dmvg4.bkt.clouddn.com/3.jpg',
+          name: '这里是产品标题'
+        },
+        {
+          thumLogo: 'http://p247dmvg4.bkt.clouddn.com/4.jpg',
+          name: '这里是产品标题'
+        },
+        {
+          thumLogo: 'http://p247dmvg4.bkt.clouddn.com/4.jpg',
+          name: '这里是产品标题'
+        }
+      ]
     }
   }
 </script>
