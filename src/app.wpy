@@ -15,7 +15,8 @@
       pages: [
         'pages/home',
         'pages/features',
-        'pages/goods_details1'
+        'pages/goods_details1',
+        'pages/navigator1'
       ],
       window: {
         backgroundTextStyle: 'light',
