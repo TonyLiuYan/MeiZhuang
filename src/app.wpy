@@ -14,7 +14,8 @@
     config = {
       pages: [
         'pages/home',
-        'pages/features'
+        'pages/features',
+        'pages/goods_details1'
       ],
       window: {
         backgroundTextStyle: 'light',

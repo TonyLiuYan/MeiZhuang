@@ -191,7 +191,7 @@
 
   <scroll-view scroll-y="true" class="swiper-item-box">
     <view class="shop_item">
-      <navigator class="list" wx:for="{{list}}" wx:key="item">
+      <navigator class="list" wx:for="{{list}}" wx:key="item" url="./goods_details1">
         <view class="image_box">
           <image src="{{item.thumLogo}}"></image>
         </view>
