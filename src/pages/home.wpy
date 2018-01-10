@@ -175,7 +175,7 @@
       <image src="../images/icon_nav_01_new.png" class="nav_icon"></image>
       <view class="nav_text">主营项目介绍</view>
     </navigator>
-    <navigator open-type="navigate" url="/pages/exchange_goods">
+    <navigator open-type="navigate" url="./navigator2">
       <image src="../images/icon_nav_02_new.png" class="nav_icon"></image>
       <view class="nav_text">顾客作品展示</view>
     </navigator>

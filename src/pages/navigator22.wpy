@@ -1,0 +1,29 @@
+<template>
+  <view class="container">
+    <view class="spacing"></view>
+    <view class="section">
+      <video id="myVideo1" src="http://p247dmvg4.bkt.clouddn.com/v2.mp4" controls></video>
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class Navigator22 extends wepy.page {
+    data = {
+
+    }
+
+    methods = {
+
+    }
+
+    onLoad() {}
+  }
+
+</script>
+
+<style lang="less">
+
+</style>
