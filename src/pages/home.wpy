@@ -155,7 +155,56 @@
       padding-left: 20rpx;
     }
   }
+.discover {
+    text-align: center;
+    font-size: 30rpx;
+    padding: 30rpx 0rpx;
+    position: relative;
+}
 
+.discover_title_doc {
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    width: 190rpx;
+    background: #f7f7f7;
+}
+
+.discover:before {
+    content: '';
+    height: 1rpx;
+    width: 460rpx;
+    position: absolute;
+    background: #dbdbdb;
+    top: 50rpx;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.discover_list {
+    .discover_img {
+        width: 100%;
+        height: 390rpx;
+    }
+    .info {
+        padding: 5rpx;
+        color: #000000;
+        font-size: 26rpx;
+        line-height: 35rpx;
+        display: flex;
+        align-items: center;
+    }
+    .item {
+        background: #fff;
+        padding: 15rpx;
+        margin-bottom: 15rpx;
+    }
+}
+
+.bc {
+    background: #f7f7f7;
+}
 </style>
 
 <template>
@@ -172,40 +221,86 @@
 
   <view class="nav_list">
     <navigator open-type="navigate" url="./navigator1">
-      <image src="../images/icon_nav_01_new.png" class="nav_icon"></image>
+      <image src="../images/MainProjectIntroduction.png" class="nav_icon"></image>
       <view class="nav_text">主营项目介绍</view>
     </navigator>
     <navigator open-type="navigate" url="./navigator2">
-      <image src="../images/icon_nav_02_new.png" class="nav_icon"></image>
+      <image src="../images/CustomerGallery.png" class="nav_icon"></image>
       <view class="nav_text">顾客作品展示</view>
     </navigator>
     <navigator open-type="navigate" url="/pages/wholesale">
-      <image src="../images/icon_nav_03_new.png" class="nav_icon"></image>
+      <image src="../images/Reservation.png" class="nav_icon"></image>
       <view class="nav_text">预约</view>
     </navigator>
     <navigator open-type="navigate" url="/pages/replenishment_goods">
-      <image src="../images/icon_nav_04_new.png" class="nav_icon"></image>
+      <image src="../images/Activity.png" class="nav_icon"></image>
       <view class="nav_text">最新活动</view>
     </navigator>
   </view>
 
   <scroll-view scroll-y="true" class="swiper-item-box">
     <view class="shop_item">
-      <navigator class="list" wx:for="{{list}}" wx:key="item" url="./goods_details1">
+      <navigator class="list">
         <view class="image_box">
-          <image src="{{item.thumLogo}}"></image>
+          <image src="http://p247dmvg4.bkt.clouddn.com/32.jpg"></image>
         </view>
-        <view class="goods">
-          <view class="product_name" wx:if="{{showTitle}}">{{item.name}}</view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/25.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/26.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/27.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/28.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/29.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/30.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="list">
+        <view class="image_box">
+          <image src="http://p247dmvg4.bkt.clouddn.com/31.jpg"></image>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+
+
+  <!-- <scroll-view scroll-y="true" class="swiper-item-box"> -->
+    <!-- <view class="shop_item"> -->
+      <!-- <navigator class="list" wx:for="{{list}}" wx:key="item" url="./goods_details1"> -->
+        <!-- <view class="image_box"> -->
+          <!-- <image src="{{item.thumLogo}}"></image> -->
+        <!-- </view>  -->
+        <!-- <view class="goods"> -->
+          <!-- <view class="product_name" wx:if="{{showTitle}}">{{item.name}}</view> -->
           <!--<view class="product_info">-->
             <!--<view class="price">￥{{item.price}}</view>-->
             <!--<view class="cost_price">￥{{item.marketPrice}}</view>-->
             <!--<view class="sale_num">销量{{item.saleCount}}件</view>-->
           <!--</view>-->
-        </view>
-      </navigator>
-    </view>
-  </scroll-view>
+        <!-- </view> -->
+      <!-- </navigator> -->
+    <!-- </view> -->
+  <!-- </scroll-view> -->
 </template>
 
 <script>
@@ -232,11 +327,9 @@
       interval: 3000, //自动切换时间间隔
       duration: 1000, //滑动动画时长
       adList: [
-        'http://p247dmvg4.bkt.clouddn.com/9.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/1.png',
-        'http://p247dmvg4.bkt.clouddn.com/2.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/3.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/2.jpg'
+        'http://p247dmvg4.bkt.clouddn.com/20.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/21.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/22.jpg'
       ],
       showTitle: true,
       list: [
