@@ -127,9 +127,9 @@
       word-break: break-all;
     }
     .price {
-      color: #de0000;
-      font-size: 35rpx;
-      font-weight: 600;
+      color: #000000;
+      font-size: 25rpx;
+      font-weight:400;
     }
     .cost_price {
       color: #666666;
@@ -247,97 +247,128 @@
       <view class="nav_text">最新活动</view>
     </navigator>
   </view>
-  <view class="recommend-title">水光针</view>
+
   <scroll-view scroll-y="true" class="swiper-item-box">
     <view class="shop_item">
-      <navigator class="list">
+      <navigator class="list" url="./navigator2">
         <view class="image_box">
           <image src="http://p247dmvg4.bkt.clouddn.com/32.jpg"></image>
         </view>
+        <view class="goods">
+          <view class="product_name">半永久纹绣</view>
+        </view>
       </navigator>
-      <navigator class="list">
+      <navigator class="list" url="./navigator2">
         <view class="image_box">
           <image src="http://p247dmvg4.bkt.clouddn.com/25.jpg"></image>
         </view>
+        <view class="goods">
+          <view class="product_name">无针水光</view>
+        </view>
       </navigator>
-      <navigator class="list">
+      <navigator class="list" url="./navigator2">
         <view class="image_box">
           <image src="http://p247dmvg4.bkt.clouddn.com/26.jpg"></image>
         </view>
+        <view class="goods">
+          <view class="product_name">睫毛嫁接</view>
+        </view>
       </navigator>
-      <navigator class="list">
+      <navigator class="list" url="./navigator2">
         <view class="image_box">
           <image src="http://p247dmvg4.bkt.clouddn.com/27.jpg"></image>
         </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/28.jpg"></image>
+        <view class="goods">
+          <view class="product_name">新娘跟妆</view>
         </view>
       </navigator>
-      <navigator class="list">
+      <navigator class="list" url="./navigator2">
         <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/29.jpg"></image>
+          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
+        </view>
+        <view class="goods">
+          <view class="product_name">婚纱展示</view>
         </view>
       </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/30.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/31.jpg"></image>
-        </view>
-      </navigator>
+
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/29.jpg"></image>-->
+        <!--</view>-->
+        <!--<view class="goods">-->
+          <!--<view class="product_name">哈哈哈哈</view>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!---->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/30.jpg"></image>-->
+        <!--</view>-->
+        <!--<view class="goods">-->
+          <!--<view class="product_name">哈哈哈哈</view>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!---->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/31.jpg"></image>-->
+        <!--</view>-->
+        <!--<view class="goods">-->
+          <!--<view class="product_name">哈哈哈哈</view>-->
+        <!--</view>-->
+      <!--</navigator>-->
+
     </view>
   </scroll-view>
 
-  <view class="recommend-title">婚纱展示</view>
-  <scroll-view scroll-y="true" class="swiper-item-box">
-    <view class="shop_item">
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-      <navigator class="list">
-        <view class="image_box">
-          <image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>
-        </view>
-      </navigator>
-    </view>
-  </scroll-view>
+  <!--<view class="recommend-title">婚纱展示</view>-->
+  <!--<scroll-view scroll-y="true" class="swiper-item-box">-->
+    <!--<view class="shop_item">-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+      <!--</navigator>-->
+      <!--<navigator class="list">-->
+        <!--<view class="image_box">-->
+          <!--<image src="http://p247dmvg4.bkt.clouddn.com/12.jpg"></image>-->
+        <!--</view>-->
+        <!--<view class="goods">-->
+          <!--<view class="product_name">哈哈哈哈</view>-->
+        <!--</view>-->
+      <!--</navigator>-->
+    <!--</view>-->
+  <!--</scroll-view>-->
 
 
   <!-- <scroll-view scroll-y="true" class="swiper-item-box"> -->

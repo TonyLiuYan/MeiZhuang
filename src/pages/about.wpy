@@ -1,0 +1,26 @@
+<template>
+  <view class="container">
+    这里是地址，手机号码，微信等信息
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class About extends wepy.page {
+    data = {
+
+    }
+
+    methods = {
+
+    }
+
+    onLoad() {}
+  }
+
+</script>
+
+<style lang="less">
+
+</style>
