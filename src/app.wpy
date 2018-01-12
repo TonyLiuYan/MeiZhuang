@@ -14,7 +14,7 @@
     config = {
       pages: [
         'pages/home',
-        'pages/features',
+        'pages/about',
         'pages/goods_details1',
         'pages/navigator1',
         'pages/navigator2',
@@ -29,25 +29,25 @@
         navigationBarBackgroundColor: '#ffffff', //导航栏背景颜色，如"#000000"
         navigationBarTitleText: 'I.U美妆纹绣工作室',
         navigationBarTextStyle: 'black'
+      },
+      tabBar: {
+        color: '#999999', //tab 上的文字默认颜色
+        selectedColor: '#d4237a', //tab 上的文字选中时的颜色
+        backgroundColor: '#ffffff', //tab 的背景色
+        borderStyle: 'black', //tabbar上边框的颜色， 仅支持 black/white
+        position: 'bottom', //可选值 bottom、top
+        list: [{
+          pagePath: 'pages/home', //页面路径，必须在 pages 中先定义
+          text: '首页', //tab 上按钮文字
+          iconPath: 'images/home.png',
+          selectedIconPath: 'images/homeActive.png'
+        }, {
+          pagePath: 'pages/about',
+          text: '关于我们',
+          iconPath: 'images/aboutme.png',
+          selectedIconPath: 'images/aboutmeActive.png'
+        }]
       }
-//      tabBar: {
-//        color: '#999999', //tab 上的文字默认颜色
-//        selectedColor: '#ff6a3c', //tab 上的文字选中时的颜色
-//        backgroundColor: '#ffffff', //tab 的背景色
-//        borderStyle: 'black', //tabbar上边框的颜色， 仅支持 black/white
-//        position: 'bottom', //可选值 bottom、top
-//        list: [{
-//          pagePath: 'pages/home', //页面路径，必须在 pages 中先定义
-//          text: '首页', //tab 上按钮文字
-//          iconPath: 'images/icon_home.png',
-//          selectedIconPath: 'images/icon_home_active.png'
-//        }, {
-//          pagePath: 'pages/features',
-//          text: '功能',
-//          iconPath: 'images/icon_features.png',
-//          selectedIconPath: 'images/icon_features_active.png'
-//        }]
-//      }
     }
 
     //全局变量
