@@ -21,7 +21,7 @@
 
   import wepy from 'wepy'
 
-  export default class SwiperCom extends wepy.component {
+  export default class extends wepy.component {
     data = {
       indicatorActiveColor: '#ffffff', //当前选中的指示点颜色
       indicatorDots: true, //是否显示面板指示点

@@ -1,0 +1,42 @@
+<template>
+  <view class="nav_list">
+    <block wx:for="{{navigatorList}}" wx:key="key" wx:item="item">
+      <navigator open-type="navigate" url="{{item.url}}">
+        <image src="{{item.imagesrc}}" class="nav_icon"></image>
+        <view class="nav_text">{{item.text}}</view>
+      </navigator>
+    </block>
+  </view>
+</template>
+
+<script>
+
+  import wepy from 'wepy'
+
+  export default class extends wepy.component {
+    data = {};
+    props = ['navigatorList']
+  }
+
+</script>
+
+<style lang="less">
+  .nav_list {
+    color: #404040;
+    display: flex;
+    font-size: ~"26rpx";
+    justify-content: space-between;
+    padding: ~"17rpx" ~"50rpx";
+    navigator {
+      text-align: center
+    }
+    .nav_icon {
+      height: ~"80rpx";
+      width: ~"80rpx";
+      margin: 0 auto ~"14rpx";
+    }
+    .nav_text {
+      font-size: ~"26rpx"
+    }
+  }
+</style>

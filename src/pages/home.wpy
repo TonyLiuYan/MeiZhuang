@@ -46,15 +46,15 @@
     height: 80rpx;
     margin: 0 auto;
     width: 80rpx;
-    margin-bottom: 14rpx;
+    margin-bottom: ~"14rpx";
   }
   .nav_text {
-    font-size: 26rpx
+    font-size: ~"26rpx"
   }
 }
 
 .recommend-title {
-  padding: 40rpx 0;
+  padding: ~"40rpx" 0;
   text-align: center;
   color: #333;
 }
@@ -218,26 +218,10 @@
 </style>
 
 <template>
+
   <swipercom :images.sync="images"></swipercom>
 
-  <view class="nav_list">
-    <navigator open-type="navigate" url="./navigator1">
-      <image src="../images/MainProjectIntroduction.png" class="nav_icon"></image>
-      <view class="nav_text">主营项目介绍</view>
-    </navigator>
-    <navigator open-type="navigate" url="./navigator2">
-      <image src="../images/CustomerGallery.png" class="nav_icon"></image>
-      <view class="nav_text">顾客作品展示</view>
-    </navigator>
-    <navigator open-type="navigate" url="/pages/wholesale">
-      <image src="../images/Reservation.png" class="nav_icon"></image>
-      <view class="nav_text">预约</view>
-    </navigator>
-    <navigator open-type="navigate" url="/pages/replenishment_goods">
-      <image src="../images/Activity.png" class="nav_icon"></image>
-      <view class="nav_text">最新活动</view>
-    </navigator>
-  </view>
+  <navigator4com :navigatorList.sync="navigator4List"></navigator4com>
 
   <scroll-view scroll-y="true" class="swiper-item-box">
     <view class="shop_item">
@@ -386,6 +370,7 @@
 
   import wepy from 'wepy'
   import SwiperCom from '../components/swipercom'
+  import Navigator4Com from '../components/navigator4com'
 //  import ShopGridList from '../components/shop_grid_list'
 //  import BottomLoadMore from '../components/common/bottomLoadMore'
 //  import Placeholder from '../components/common/placeholder'
@@ -394,10 +379,16 @@
     config = {}
 
     components = {
-      swipercom: SwiperCom
+      swipercom: SwiperCom,
+      navigator4com: Navigator4Com
     }
     data = {
       images: [],
+      navigator4List: [
+        {url: './navigator1', imagesrc: '../images/MainProjectIntroduction.png', text: '主营项目介绍'},
+        {url: './navigator2', imagesrc: '../images/CustomerGallery.png', text: '顾客作品展示'},
+        {url: '', imagesrc: '../images/Reservation.png', text: '预约'},
+        {url: '', imagesrc: '../images/Activity.png', text: '最新活动'}],
       showTitle: true,
       list: [
         {
