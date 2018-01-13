@@ -2,6 +2,7 @@
   @import "./styles/base";
   @import "./styles/icon";
   @import "./styles/style";
+  @import "./styles/weui.wxss";
 </style>
 
 <script>

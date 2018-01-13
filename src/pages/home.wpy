@@ -37,7 +37,7 @@
         {url: '', imagesrc: '../images/Reservation.png', text: '预约'},
         {url: '', imagesrc: '../images/Activity.png', text: '最新活动'}],
       scrollViewList: [
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/32.jpg', text: '半永久纹绣'},
+        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg', text: '半永久纹绣'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},

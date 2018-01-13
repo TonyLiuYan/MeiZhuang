@@ -1,6 +1,23 @@
 <template>
-  <view class="container">
-    这里是地址，手机号码，微信等信息
+
+  <view class="page__bd">
+    <view class="weui-cells__title">联系方式</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">地址</view>
+        <view class="weui-cell__ft">辽宁省葫芦岛市建昌县兴隆大家庭*楼*室</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">微信号</view>
+        <view class="weui-cell__ft">
+          <text selectable="true">xs13654297010</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="page__bd page__bd_spacing">
+    <button class="weui-btn" type="primary" @tap="call">拨打电话</button>
   </view>
 </template>
 
@@ -8,19 +25,30 @@
   import wepy from 'wepy'
 
   export default class About extends wepy.page {
-    data = {
-
-    }
+    data = {}
 
     methods = {
-
+      call: function () {
+        wepy.makePhoneCall({
+          phoneNumber: '18504295739'
+        })
+      }
     }
 
-    onLoad() {}
+    onLoad() {
+    }
   }
 
 </script>
 
 <style lang="less">
+  .button-sp-area {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+  }
 
+  .mini-btn {
+    margin-right: 5px;
+  }
 </style>
