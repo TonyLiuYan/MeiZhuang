@@ -218,16 +218,7 @@
 </style>
 
 <template>
-  <view class="container">
-    <swiper class="swiper" indicator-active-color="{{indicatorActiveColor}}" indicator-dots="{{indicatorDots}}"
-            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
-      <block wx:for="{{adList}}" wx:key="key">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image"/>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
+  <swipercom :images.sync="images"></swipercom>
 
   <view class="nav_list">
     <navigator open-type="navigate" url="./navigator1">
@@ -394,6 +385,7 @@
   /* eslint-disable no-trailing-spaces,spaced-comment */
 
   import wepy from 'wepy'
+  import SwiperCom from '../components/swipercom'
 //  import ShopGridList from '../components/shop_grid_list'
 //  import BottomLoadMore from '../components/common/bottomLoadMore'
 //  import Placeholder from '../components/common/placeholder'
@@ -402,22 +394,10 @@
     config = {}
 
     components = {
-//      shopGridList: ShopGridList
-//      bottomLoadMore: BottomLoadMore,
-//      placeholder: Placeholder
+      swipercom: SwiperCom
     }
     data = {
-      //swiper组件属性设置
-      indicatorActiveColor: '#fff', //当前选中的指示点颜色
-      indicatorDots: true, //是否显示面板指示点
-      autoplay: true, //是否自动切换
-      interval: 3000, //自动切换时间间隔
-      duration: 1000, //滑动动画时长
-      adList: [
-        'http://p247dmvg4.bkt.clouddn.com/33.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/21.jpg',
-        'http://p247dmvg4.bkt.clouddn.com/22.jpg'
-      ],
+      images: [],
       showTitle: true,
       list: [
         {
@@ -441,6 +421,14 @@
           name: '这里是产品标题'
         }
       ]
+    };
+
+    onLoad() {
+      console.log(this.images)
+      this.images = [
+        'http://p247dmvg4.bkt.clouddn.com/33.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/21.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/22.jpg']
     }
   }
 </script>

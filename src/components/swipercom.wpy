@@ -1,0 +1,47 @@
+<template>
+  <view class="container">
+    <swiper class="swiper"
+            indicator-active-color="{{indicatorActiveColor}}"
+            indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            interval="{{interval}}"
+            duration="{{duration}}"
+            circular="{{circular}}">
+      <block wx:for="{{images}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>
+
+<script>
+  /* eslint-disable spaced-comment */
+
+  import wepy from 'wepy'
+
+  export default class SwiperCom extends wepy.component {
+    data = {
+      indicatorActiveColor: '#ffffff', //当前选中的指示点颜色
+      indicatorDots: true, //是否显示面板指示点
+      autoplay: true, //是否自动切换
+      interval: 3000, //自动切换时间间隔
+      duration: 1000, //滑动动画时长
+      circular: true  //是否采用衔接滑动
+    };
+
+    props = ['images']
+  }
+</script>
+
+<style lang="less">
+  .swiper {
+    height: ~"348rpx";
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 100%;
+  }
+</style>
