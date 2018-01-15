@@ -5,7 +5,7 @@
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
         <view class="weui-cell__bd">地址</view>
-        <view class="weui-cell__ft">辽宁省葫芦岛市建昌县兴隆大家庭*楼*室</view>
+        <view class="weui-cell__ft">兴隆大家庭四楼，观光梯左侧第三家</view>
       </view>
       <view class="weui-cell">
         <view class="weui-cell__bd">微信号</view>
@@ -16,7 +16,12 @@
     </view>
   </view>
 
-  <view class="page__bd page__bd_spacing">
+  <view style="text-align: center;margin-top: 10px">I.U美妆纹绣工作室</view>
+  <view style="margin-top: 10px;text-align: center">
+    <image src="../images/Store.jpg"  mode="aspectFit"></image>
+  </view>
+
+  <view class="page__bd page__bd_spacing" style="margin-top: 10px">
     <button class="weui-btn" type="primary" @tap="call">拨打电话</button>
   </view>
 </template>

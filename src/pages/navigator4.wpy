@@ -1,0 +1,27 @@
+<template>
+
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class Navigator2 extends wepy.page {
+    data = {
+      imageList: [
+        'http://p247dmvg4.bkt.clouddn.com/33.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/21.jpg',
+        'http://p247dmvg4.bkt.clouddn.com/22.jpg']
+    }
+
+    methods = {}
+
+    onLoad(option) {
+//      console.log(option)
+//      console.log(JSON.stringify(this.imageList))
+    }
+  }
+</script>
+
+<style>
+
+</style>

@@ -32,10 +32,10 @@
         'http://p247dmvg4.bkt.clouddn.com/21.jpg',
         'http://p247dmvg4.bkt.clouddn.com/22.jpg'],
       navigator4List: [
-        {url: './navigator1', imagesrc: '../images/MainProjectIntroduction.png', text: '主营项目介绍'},
+        {url: './navigator1', imagesrc: '../images/MainProjectIntroduction.png', text: '主营项目'},
         {url: './navigator2', imagesrc: '../images/CustomerGallery.png', text: '顾客作品展示'},
         {url: '', imagesrc: '../images/Reservation.png', text: '预约'},
-        {url: '', imagesrc: '../images/Activity.png', text: '最新活动'}],
+        {url: './navigator4', imagesrc: '../images/Activity.png', text: '最新活动'}],
       scrollViewList: [
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg', text: '半永久纹绣'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
