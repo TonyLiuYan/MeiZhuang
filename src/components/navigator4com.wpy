@@ -15,7 +15,8 @@
 
   export default class extends wepy.component {
     data = {};
-    props = ['navigatorList']
+    props = ['navigatorList'];
+    methods = {};
   }
 
 </script>
@@ -27,7 +28,7 @@
     font-size: ~"26rpx";
     justify-content: space-between;
     padding: ~"17rpx" ~"50rpx";
-    navigator {
+    .navigator {
       text-align: center
     }
     .nav_icon {
