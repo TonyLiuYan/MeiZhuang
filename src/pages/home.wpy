@@ -16,9 +16,9 @@
   /* eslint-disable no-trailing-spaces,spaced-comment */
 
   import wepy from 'wepy'
-  import SwiperCom from '../components/swipercom'
-  import Navigator4Com from '../components/navigator4com'
-  import ScrollViewSquareCom from '../components/scrollviewsquarecom'
+  import SwiperCom from '../components/swiper_com'
+  import Navigator4Com from '../components/navigator_4_com'
+  import ScrollViewSquareCom from '../components/scrollview_square_com'
 
   export default class Home extends wepy.page {
     components = {
