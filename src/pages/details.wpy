@@ -1,0 +1,22 @@
+<template>
+
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class details extends wepy.page {
+    data = {}
+
+    methods = {}
+
+    onLoad(option) {
+      console.log('details:' + option)
+    }
+  }
+
+</script>
+
+<style lang="less">
+
+</style>
