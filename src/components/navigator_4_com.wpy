@@ -1,7 +1,7 @@
 <template>
   <view class="nav_list">
     <block wx:for="{{navigatorList}}" wx:key="key" wx:item="item">
-      <navigator open-type="navigate" url="{{item.url}}">
+      <navigator open-type="navigate" url="{{item.url}}" class="navigator">
         <image src="{{item.imagesrc}}" class="nav_icon"></image>
         <view class="nav_text">{{item.text}}</view>
       </navigator>

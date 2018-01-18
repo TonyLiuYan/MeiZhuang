@@ -24,7 +24,9 @@
         'pages/navigator22',
         'pages/navigator23',
         'pages/navigator24',
-        'pages/navigator25'
+        'pages/navigator25',
+        'pages/rectangle',
+        'pages/details'
       ],
       window: {
         backgroundTextStyle: 'light',
@@ -59,14 +61,13 @@
 
     //构造函数
     constructor() {
-      console.log('*****constructor()***********')
       super()
-      this.use('requestfix')
+      console.log('***app constructor()***')
     }
 
     //当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
     onLaunch() {
-      console.log('*****onLaunch()*******')
+      console.log('***app onLaunch()***')
     }
   }
 </script>

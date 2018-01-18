@@ -8,7 +8,7 @@
 
   <navigator4com :navigatorList.sync="navigator4List"></navigator4com>
 
-  <scrollviewsquarecom :list.sync="scrollViewList"></scrollviewsquarecom>
+  <scrollviewsquarecom :list.sync="scrollViewList2"></scrollviewsquarecom>
 
 </template>
 
@@ -16,15 +16,17 @@
   /* eslint-disable no-trailing-spaces,spaced-comment */
 
   import wepy from 'wepy'
-  import SwiperCom from '../components/swipercom'
-  import Navigator4Com from '../components/navigator4com'
-  import ScrollViewSquareCom from '../components/scrollviewsquarecom'
+  import SwiperCom from '../components/swiper_com'
+  import Navigator4Com from '../components/navigator_4_com'
+  import ScrollViewSquareCom from '../components/scrollview_square_com'
+  import ScrollViewRectangleCom from '../components/scrollview_rectangle_com'
 
   export default class Home extends wepy.page {
     components = {
       swipercom: SwiperCom,
       navigator4com: Navigator4Com,
-      scrollviewsquarecom: ScrollViewSquareCom
+      scrollviewsquarecom: ScrollViewSquareCom,
+      scrollviewrectanglecom: ScrollViewRectangleCom
     };
     data = {
       imageList: [
@@ -41,7 +43,39 @@
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
+        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg', text: '婚纱展示'}],
+      scrollViewList2: [
+        {
+          url: './rectangle',
+          src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg',
+          text: '半永久纹绣',
+          rectangle: [
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/9.jpg',
+              text: '分类1',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg']
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/9.jpg',
+              text: '分类2',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/12.jpg']
+            }]
+        },
+        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
+        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
+        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg', text: '婚纱展示'}]
+    };
+
+    onLoad() {
+//      console.log(JSON.stringify(this.scrollViewList2[0].rectangle))
+//      console.log(JSON.parse(JSON.stringify(this.scrollViewList2[0].rectangle)))
     }
   }
 </script>

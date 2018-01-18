@@ -1,0 +1,31 @@
+<template>
+  <div>details</div>
+  <block wx:for="{{src}}" wx:key="{{key}}">
+    <image src="{{item}}"></image>
+  </block>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class details extends wepy.page {
+    data = {
+      src: []
+    }
+
+    methods = {}
+
+    onLoad(option) {
+      console.log(option.title)
+      console.log(JSON.parse(option.title))
+      this.src = JSON.parse(option.title)
+//      this.src = option.title
+//      console.log('details:' + option.title)
+    }
+  }
+
+</script>
+
+<style lang="less">
+
+</style>

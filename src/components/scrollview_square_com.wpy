@@ -2,14 +2,14 @@
   <scroll-view scroll-y="true" class="swiper-item-box">
     <view class="shop_item">
       <block wx:for="{{list}}" wx:key="key">
-        <navigator class="list" url="{{item.url}}">
+        <view @tap="nav('{{item.rectangle}}')" class="list">
           <view class="image_box">
             <image src="{{item.src}}"></image>
           </view>
           <view class="goods">
             <view class="product_name">{{item.text}}</view>
           </view>
-        </navigator>
+        </view>
       </block>
     </view>
   </scroll-view>
@@ -19,7 +19,15 @@
   import wepy from 'wepy'
 
   export default class extends wepy.component {
-    props = ['list']
+    props = ['list'];
+    methods = {
+      nav(data) {
+//        console.log(data)
+        wepy.navigateTo({
+          url: '../pages/rectangle?title=' + JSON.stringify(data)
+        })
+      }
+    };
   }
 </script>
 
