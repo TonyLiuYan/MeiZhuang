@@ -10,8 +10,6 @@
 
   <scrollviewsquarecom :list.sync="scrollViewList2"></scrollviewsquarecom>
 
-  <scrollviewrectanglecom></scrollviewrectanglecom>
-
 </template>
 
 <script>
@@ -73,6 +71,11 @@
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg', text: '婚纱展示'}]
+    };
+
+    onLoad() {
+//      console.log(JSON.stringify(this.scrollViewList2[0].rectangle))
+//      console.log(JSON.parse(JSON.stringify(this.scrollViewList2[0].rectangle)))
     }
   }
 </script>

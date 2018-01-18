@@ -2,14 +2,12 @@
   <view class="bc">
     <view class="discover_list">
       <block wx:for="{{list}}" wx:key="key">
-        <!--<navigator class="item" open-type="navigate" url="./navigator21">-->
         <view @tap="nav('{{item.details}}')" class="item">
           <image class="discover_img" src="{{item.src}}"></image>
           <view class="info">
             <view>{{item.text}}</view>
           </view>
         </view>
-        <!--</navigator>-->
       </block>
     </view>
   </view>
@@ -21,11 +19,14 @@
   export default class extends wepy.component {
     props = ['list'];
 
-    onLoad(data) {
-//      wepy.navigateTo({
-//        url: '../pages/details?' + JSON.stringify(data)
-//      })
-    }
+    methods = {
+      nav(data) {
+//        console.log(data)
+        wepy.navigateTo({
+          url: '../pages/details?title=' + JSON.stringify(data)
+        })
+      }
+    };
   }
 </script>
 

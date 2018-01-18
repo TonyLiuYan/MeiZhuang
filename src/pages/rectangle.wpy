@@ -1,19 +1,5 @@
 <template>
-<scrollviewrectanglecom :list.sync="rectangleData"></scrollviewrectanglecom>
-  <!--<view class="bc">-->
-    <!--<view class="discover_list">-->
-      <!--<block wx:for="{{rectangleData}}" wx:key="key">-->
-        <!--&lt;!&ndash;<navigator class="item" open-type="navigate" url="./navigator21">&ndash;&gt;-->
-        <!--<view @tap="nav('{{item.details}}')" class="item">-->
-          <!--<image class="discover_img" src="{{item.src}}"></image>-->
-          <!--<view class="info">-->
-            <!--<view>{{item.text}}</view>-->
-          <!--</view>-->
-        <!--</view>-->
-        <!--&lt;!&ndash;</navigator>&ndash;&gt;-->
-      <!--</block>-->
-    <!--</view>-->
-  <!--</view>-->
+  <scrollviewrectanglecom :list.sync="rectangleData"></scrollviewrectanglecom>
 </template>
 
 <script>
@@ -31,6 +17,10 @@
     methods = {}
 
     onLoad(option) {
+      this.rectangleData = JSON.parse(option.title)
+//      console.log(this.rectangleData)
+//      console.log(option)
+//      console.log(option)
     }
   }
 
