@@ -8,7 +8,7 @@
 
   <navigator4com :navigatorList.sync="navigator4List"></navigator4com>
 
-  <scrollviewsquarecom :list.sync="scrollViewList2"></scrollviewsquarecom>
+  <scrollviewsquarecom :list.sync="scrollViewList"></scrollviewsquarecom>
 
 </template>
 
@@ -39,12 +39,6 @@
         {url: '', imagesrc: '../images/Reservation.png', text: '预约'},
         {url: './navigator4', imagesrc: '../images/Activity.png', text: '最新活动'}],
       scrollViewList: [
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg', text: '半永久纹绣'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg', text: '婚纱展示'}],
-      scrollViewList2: [
         {
           url: './rectangle',
           src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg',
@@ -70,7 +64,75 @@
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
         {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg', text: '婚纱展示'}]
+        {
+          url: './navigator2',
+          src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg',
+          text: '婚纱展示',
+          rectangle: [
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
+              text: '红色婚纱',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0220.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0221.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0225.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0234.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0235.jpg']
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0301.jpg',
+              text: '小白婚纱',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0301.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0289.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0290.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0291.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0292.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0295.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0296.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0297.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0298.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0299.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0302.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0303.jpg']
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
+              text: '小飞侠婚纱',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0324.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0317.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0320.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0321.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0322.jpg'
+              ]
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
+              text: '大红穗穗胸前挂婚纱',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0451.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0443.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0446.jpg'
+
+              ]
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0418.jpg',
+              text: '摸胸',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0418.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0420.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0416.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0419.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0421.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0422.jpg'
+              ]
+            }]
+        }]
     };
 
     onLoad() {

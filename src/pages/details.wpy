@@ -1,7 +1,8 @@
 <template>
-  <div>details</div>
   <block wx:for="{{src}}" wx:key="{{key}}">
-    <image src="{{item}}"></image>
+    <view style="text-align: center">
+      <image src="{{item}}" mode="aspectFit"></image>
+    </view>
   </block>
 </template>
 
@@ -16,11 +17,9 @@
     methods = {}
 
     onLoad(option) {
-      console.log(option.title)
-      console.log(JSON.parse(option.title))
+//      console.log(option.title)
+//      console.log(JSON.parse(option.title))
       this.src = JSON.parse(option.title)
-//      this.src = option.title
-//      console.log('details:' + option.title)
     }
   }
 
