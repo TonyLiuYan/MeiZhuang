@@ -36,9 +36,9 @@
         'http://p247dmvg4.bkt.clouddn.com/22.jpg'],
       navigator4List: [
         {url: './navigator1', imagesrc: '../images/MainProjectIntroduction.png', text: '主营项目'},
-        {url: './navigator2', imagesrc: '../images/CustomerGallery.png', text: '顾客作品展示'},
-        {url: '', imagesrc: '../images/Reservation.png', text: '预约'},
-        {url: './navigator4', imagesrc: '../images/Activity.png', text: '最新活动'}],
+        {url: './deving', imagesrc: '../images/CustomerGallery.png', text: '顾客作品展示'},
+        {url: './deving', imagesrc: '../images/Reservation.png', text: '预约'},
+        {url: './deving', imagesrc: '../images/Activity.png', text: '最新活动'}],
       scrollViewList: [
         {
           src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg',
@@ -118,7 +118,15 @@
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0404.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0402.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0407.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0408.jpg'
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0408.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0266.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0389.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0390.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0396.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0401.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0409.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0414.jpg'
               ]
             },
             {
@@ -141,7 +149,30 @@
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0466.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0467.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0469.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0470.jpg'
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0470.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0471.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0472.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0475.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0476.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0478.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0479.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0481.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0483.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0485.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0487.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0488.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0490.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0489.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0497.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0498.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0499.jpg',
+                //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0500.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0501.jpg'
               ]
             },
             {
@@ -153,8 +184,22 @@
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0221.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0225.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0234.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0235.jpg'
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0235.jpg',
                 //
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0510.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0512.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0513.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0514.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0516.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0517.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0518.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0519.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0521.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0523.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0524.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0525.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0527.jpg',
+                'http://ozhoxxrm7.bkt.clouddn.com/IMG_0528.jpg'
               ]
             }]
         }]

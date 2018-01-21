@@ -26,7 +26,8 @@
         'pages/navigator24',
         'pages/navigator25',
         'pages/rectangle',
-        'pages/details'
+        'pages/details',
+        'pages/deving'
       ],
       window: {
         backgroundTextStyle: 'light',
