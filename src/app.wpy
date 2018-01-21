@@ -61,14 +61,14 @@
     }
 
     //构造函数
-    constructor() {
-      super()
-      console.log('***app constructor()***')
-    }
+//    constructor() {
+//      super()
+//      console.log('***app constructor()***')
+//    }
 
     //当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
     onLaunch() {
-      console.log('***app onLaunch()***')
+//      console.log('***app onLaunch()***')
     }
   }
 </script>
