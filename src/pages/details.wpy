@@ -1,7 +1,7 @@
 <template>
   <block wx:for="{{src}}" wx:key="{{key}}">
     <view style="text-align: center">
-      <image src="{{item}}" mode="aspectFit"></image>
+      <image src="{{item}}" data-src="{{item}}" mode="aspectFit" @tap="previewImage"></image>
     </view>
   </block>
 </template>
@@ -14,7 +14,15 @@
       src: []
     }
 
-    methods = {}
+    methods = {
+      previewImage(e) {
+        var current = e.target.dataset.src
+        wepy.previewImage({
+          current: current, // 当前显示图片的http链接
+          urls: this.data.src // 需要预览的图片http链接列表
+        })
+      }
+    }
 
     onLoad(option) {
 //      console.log(option.title)

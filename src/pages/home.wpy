@@ -22,6 +22,7 @@
   import ScrollViewRectangleCom from '../components/scrollview_rectangle_com'
 
   export default class Home extends wepy.page {
+    config = {};
     components = {
       swipercom: SwiperCom,
       navigator4com: Navigator4Com,
@@ -40,50 +41,40 @@
         {url: './navigator4', imagesrc: '../images/Activity.png', text: '最新活动'}],
       scrollViewList: [
         {
-          url: './rectangle',
           src: 'http://p247dmvg4.bkt.clouddn.com/40.jpg',
           text: '半永久纹绣',
-          rectangle: [
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/9.jpg',
-              text: '分类1',
-              details: [
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg']
-            },
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/9.jpg',
-              text: '分类2',
-              details: [
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/12.jpg']
-            }]
+          rectangle: []
         },
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg', text: '无针水光'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg', text: '睫毛嫁接'},
-        {url: './navigator2', src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg', text: '新娘跟妆'},
         {
-          url: './navigator2',
+          src: 'http://p247dmvg4.bkt.clouddn.com/25.jpg',
+          text: '无针水光',
+          rectangle: []
+        },
+        {
+          src: 'http://p247dmvg4.bkt.clouddn.com/26.jpg',
+          text: '睫毛嫁接',
+          rectangle: []
+        },
+        {
+          src: 'http://p247dmvg4.bkt.clouddn.com/27.jpg',
+          text: '新娘跟妆',
+          rectangle: []
+        },
+        {
           src: 'http://p247dmvg4.bkt.clouddn.com/12.jpg',
           text: '婚纱展示',
           rectangle: [
             {
-              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
-              text: '红色婚纱',
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
+              text: '婚纱',
               details: [
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0220.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0221.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0225.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0234.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0235.jpg']
-            },
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0301.jpg',
-              text: '小白婚纱',
-              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0324.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0317.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0320.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0321.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0322.jpg',
+                //
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0301.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0289.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0290.jpg',
@@ -95,41 +86,75 @@
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0298.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0299.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0302.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0303.jpg']
-            },
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
-              text: '小飞侠婚纱',
-              details: [
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0326.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0324.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0317.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0320.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0321.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0322.jpg'
-              ]
-            },
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
-              text: '大红穗穗胸前挂婚纱',
-              details: [
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0451.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0443.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0446.jpg'
-
-              ]
-            },
-            {
-              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0418.jpg',
-              text: '摸胸',
-              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0303.jpg',
+                //
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0418.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0420.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0416.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0419.jpg',
                 'http://p247dmvg4.bkt.clouddn.com/IMG_0421.jpg',
-                'http://p247dmvg4.bkt.clouddn.com/IMG_0422.jpg'
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0422.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0355.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0348.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0349.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0350.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0351.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0352.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0353.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0354.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0371.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0366.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0370.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0373.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0429.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0423.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0424.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0433.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0435.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0404.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0402.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0407.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0408.jpg'
+              ]
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
+              text: '秀禾服',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0450.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0451.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0443.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0446.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0460.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0462.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0455.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0456.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0457.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0458.jpg',
+                //
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0468.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0466.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0467.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0469.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0470.jpg'
+              ]
+            },
+            {
+              src: 'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
+              text: '晚礼服',
+              details: [
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0230.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0220.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0221.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0225.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0234.jpg',
+                'http://p247dmvg4.bkt.clouddn.com/IMG_0235.jpg'
+                //
               ]
             }]
         }]
